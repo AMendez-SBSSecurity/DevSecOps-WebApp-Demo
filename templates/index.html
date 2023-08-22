@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WebApp-Demo</title>
+    <link href="../static/style.css" rel="stylesheet">
+</head>
+<body>
+    {% if show_app %}
+        <div class="logo-item">
+            <img src="{{ url_for('static', filename='images/logo_voya.png')}}" width="244" height="100%">
+        </div>
+        <nav class="horizontal-menu">
+            <ul>
+                <li>
+                    <a class="menu-item nav-item {% if active_page == 'table' %}active{% endif %}" href="{{ url_for('table') }}" id="option_table">
+                        <img src="{{ url_for('static', filename='images/icons8-cuadrícula-64.png') }}" width="32" height="32">
+                        List
+                    </a>
+                </li>
+                <li>
+                    <a class="menu-item nav-item {% if active_page == 'charts' %}active{% endif %}" href="{{ url_for('charts') }}" id="option_chart">
+                        <img src="{{ url_for('static', filename='images/icons8-gráfico-94.png') }}" width="32" height="32">
+                        Charts
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            {% block content %}{% endblock %}
+        </div>
+        <script>
+            function show_content(content) {
+                var contentDiv = document.getElementById('content');
+                
+                var links = document.querySelectorAll('ul li a');
+            
+            }
+            show_content('table');
+        </script>
+    {% else %}
+        <div class="content hello">
+            <h1>Hello World</h1>
+            <span>To see the information, please deploy your app</span>
+        </div>
+    {% endif %}
+
+</body>
+</html>
