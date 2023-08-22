@@ -5,11 +5,13 @@ import csv
 
 app = Flask(__name__)
 bootstrap = Bootstrap(app)
+#Function to see the app
 def show():
     return True
 show_app = show()
 @app.route('/')
 def index():
+    #If show_app is true, the application will display with the table like default view
     if show_app:
         csv_data = []
         with open('static/data.csv', 'r', encoding='utf-8') as csvfile:
@@ -68,8 +70,6 @@ def delete(id):
     with open('static/data.csv', 'w', newline='',encoding='utf-8') as file:
         writer = csv.writer(file)
         writer.writerows(lines)
-    
-    # Redirigir a la página que muestra la tabla actualizada
     return redirect(url_for('table'))
 
 if __name__ == '__main__':

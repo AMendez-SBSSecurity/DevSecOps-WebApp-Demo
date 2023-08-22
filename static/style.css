@@ -43,13 +43,13 @@ body {
     display: flex;
     justify-content:left;
     align-items: center;
-    height: 70px; /* Ajusta la altura deseada */
-    background-color: #ffffff; /* Color de fondo opcional */
+    height: 70px; 
+    background-color: #ffffff;
 }
 
 .logo-item img {
-    max-height: 100%; /* La imagen ocupará todo el alto del div */
-    max-width: 100%; /* La imagen se ajustará al ancho del div */
+    max-height: 100%; 
+    max-width: 100%; 
 }
 
 .nav-item.active {
