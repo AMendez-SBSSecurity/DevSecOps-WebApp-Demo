@@ -4,7 +4,7 @@ from collections import defaultdict
 import csv
 
 app = Flask(__name__)
-bootstrap = Bootstrap(app)
+
 #Function to see the app
 def show():
     return True
