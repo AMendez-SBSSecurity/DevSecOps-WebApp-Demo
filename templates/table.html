@@ -16,48 +16,22 @@
                     <table class="table">
                         <thead>
                             <tr>
-                                <th scope="col">#</th>
                                 <th scope="col">Name</th>
                                 <th scope="col">Menu Item</th>
                                 <th scope="col">Notes</th>
-                                <th scope="col">Edit</th>
-                                <th scope="col">Delete</th>
                             </tr>
                         </thead>
                         <tbody>
                             {% for d in csv_data %}
                             <tr class="item_table">
-                                <td>{{ d.id }}</td>
+                                <!--<td>{{ i }}</td>-->
                                 <td>{{ d.name }}</td>
                                 <td>{{ d.menu_item }}</td>
                                 <td>{{ d.notes }}</td>
-                                <td><button class="btn btn-primary btn-sm" id="btn-edit{{d.id}}" data-bs-toggle="modal" data-bs-target="#modal{{d.id}}">Edit</button></td>
-                                <td><a href="{{url_for('delete', id=d.id)}}" class="btn btn-danger btn-sm">Delete</a></td>
+    
                     
                             </tr>
-                            <div class="modal fade" id="modal{{d.id}}" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                <div class="modal-dialog">
-                                    <div class="modal-content">
-                                        <div class="modal-header">
-                                            <h1 class="modal-title fs-5" id="exampleModalLabel">{{d.name}}</h1>
-                                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                                        </div>
-                                        <div class="modal-body">
-                                            <form action="/edit/{{d.id}}" method="post">
-                                                <label>Name</label>
-                                                <input type="text" class="form-control mb-3" name="name" value="{{d.name}}">
-                                                <label>Menu item</label>
-                                                <input type="text" class="form-control mb-3" name="menu_item" value="{{d.menu_item}}">
-                                                <label>Notes</label>
-                                                <input type="text" class="form-control mb-3" name="notes" value="{{d.notes}}">
-                                            </form>
-                                        </div>
-                                        <div class="modal-footer">
-                                            <button type="submit" class="btn btn-primary">Save changes</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            
                             {% endfor %}
                         </tbody>
                     </table>
