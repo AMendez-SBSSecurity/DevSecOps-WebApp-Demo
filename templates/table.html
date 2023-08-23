@@ -15,23 +15,20 @@
                 <div class="table-responsive">
                     <table class="table">
                         <thead>
-                            <tr>
+                            <tr class="text-center">
                                 <th scope="col">Name</th>
                                 <th scope="col">Menu Item</th>
                                 <th scope="col">Notes</th>
                             </tr>
                         </thead>
-                        <tbody>
+                        <tbody class="text-center">
                             {% for d in csv_data %}
                             <tr class="item_table">
                                 <!--<td>{{ i }}</td>-->
                                 <td>{{ d.name }}</td>
                                 <td>{{ d.menu_item }}</td>
                                 <td>{{ d.notes }}</td>
-    
-                    
                             </tr>
-                            
                             {% endfor %}
                         </tbody>
                     </table>
@@ -39,6 +36,8 @@
             </div>
         </div>
     </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     
 </body>

@@ -14,6 +14,7 @@ show_app = show()
 name_items_menu = app.config["TEXT_NAME_ITEM_MENU"]
 message_empty_page = app.config["TEXT_EMPTY_PAGE"]
 title_table = app.config["TEXT_TITLE_CONTENT_TABLE"]
+
 @app.route('/')
 def index():
     #If show_app is true, the application will display with the table like default view
@@ -23,7 +24,7 @@ def index():
             reader = csv.DictReader(csvfile)
             for row in reader:
                 csv_data.append(row)
-        return render_template('table.html', active_page='table',title_table=title_table, csv_data=csv_data,show_app=show_app,message_empty_page=message_empty_page,name_items_menu=name_items_menu)
+        return render_template('table.html', active_page='table',title_table=title_table, csv_data=csv_data,show_app=show_app,message_empty_page=message_empty_page,name_items_menu=name_items_menu,success_message=('success_message', None))
     else:
         return render_template('index.html', show_app=show_app,message_empty_page=message_empty_page,name_items_menu=name_items_menu)
 @app.route('/table')
@@ -33,7 +34,7 @@ def table():
         reader = csv.DictReader(csvfile)
         for row in reader:
             csv_data.append(row)
-    return render_template('table.html', active_page='table', title_table=title_table,csv_data=csv_data,show_app=show_app,message_empty_page=message_empty_page,name_items_menu=name_items_menu)
+    return render_template('table.html', active_page='table', title_table=title_table,csv_data=csv_data,show_app=show_app,message_empty_page=message_empty_page,name_items_menu=name_items_menu,success_message=('success_message', None))
     
 @app.route('/charts')
 def charts():

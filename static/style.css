@@ -74,8 +74,9 @@ body {
 .container_table{
     width: 100%;
     height: auto; 
-    display:block;
-    margin: 0px 25px 25px 0px;
+    display:flex;
+    margin: auto;
+    justify-content: center;
 }
 .container {
     width: 100%;
@@ -85,6 +86,7 @@ body {
 .table{
     max-width: 100%;
     overflow-x: hidden;
+    margin: auto;
 }
 .hello{
     top: 50%;
