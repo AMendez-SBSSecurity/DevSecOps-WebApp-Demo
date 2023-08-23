@@ -9,7 +9,10 @@ TEXT_TITLE_CONTENT_CHART = "Charts"
 
 config = configparser.ConfigParser()
 config.read("app.properties")
+print("#############")
+
 
 
 #ENABLE APP
 SHOW_APP = bool(config['Page']['appState'])
+print(SHOW_APP)
