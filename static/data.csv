@@ -1,19 +1,19 @@
-id,name,menu_item,notes
-1,Zowie Gutierrez, Burger, Extra cheese
-2,Angi Balderrama, Pork ribs, None
-3,Ana Valdez, Chicken, Without French fries
-4,Naty Fernandez, Lasaña, None
-5,Marcos Gutierrez, Chicken, With an extra portion of french fries
-6,Lili Chambi, Burger, Extra cheese
-7,Brian Torrez, Pork ribs,None
-8,Cecilia Belmonte, Chicken, With an extra portion of french fries
-9,Pedro Aliaga, Chicken, None
-10,Santiago Alarcon, Chicken, None
-11,Luisa Velasquez, Pork ribs,None
-12,Lidia Valdez,Pizza,None
-13,Guido Apaza,Pizza,None
-14,Ximena Callapa,Hot Dog, double sausage
-15,Laura Aguirre,Hot Dog, None
-16,Freddy Huanca,Hot Dog, None
+name,menu_item,notes
+Zowie Gutierrez, Burger, Extra cheese
+Angi Balderrama, Pork ribs, None
+Ana Valdez, Chicken, Without French fries
+Naty Fernandez, Lasaña, None
+Marcos Gutierrez, Chicken, With an extra portion of french fries
+Lili Chambi, Burger, Extra cheese
+Brian Torrez, Pork ribs,None
+Cecilia Belmonte, Chicken, With an extra portion of french fries
+Pedro Aliaga, Chicken, None
+Santiago Alarcon, Chicken, None
+Luisa Velasquez, Pork ribs,None
+Lidia Valdez,Pizza,None
+Guido Apaza,Pizza,None
+Ximena Callapa,Hot Dog, double sausage
+Laura Aguirre,Hot Dog, None
+Freddy Huanca,Hot Dog, None
 
 
