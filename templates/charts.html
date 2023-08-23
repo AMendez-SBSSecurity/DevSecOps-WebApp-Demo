@@ -11,7 +11,7 @@
 
 </head>
 <body>
-    <h1 class="text-center table_title">Charts</h1>
+    <h1 class="text-center table_title">{{title_chart}}</h1>
     <div class="container">
         <div style="flex: 1; padding: 10px;width: 100%;">
             <canvas id="barChart"></canvas>
@@ -25,11 +25,15 @@
         window.chartColors = {
             red: 'rgb(191, 49, 4)',
             orange: 'rgb(255, 159, 64)',
-            yellow: 'rgb(255, 205, 86)',
             green: 'rgb(69, 206, 5)',
             blue: 'rgb(54, 162, 235)',
             purple: 'rgb(153, 102, 255)',
-            grey: 'rgb(201, 203, 207)'
+            grey: 'rgb(201, 203, 207)',
+            purple: 'rgb(153, 102, 255)',
+            yellow: 'rgb(255, 205, 86)',
+            green: 'rgb(69, 206, 5)',
+            blue: 'rgb(54, 162, 235)',
+            
         };
         var bchar = document.getElementById('barChart').getContext('2d');
         var cchart = document.getElementById('circleChart').getContext('2d');
