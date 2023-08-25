@@ -23,7 +23,7 @@
                             </tr>
                         </thead>
                         <tbody>
-                            {% for d in csv_data %}
+                            {% for d in csv_data|reverse %}
                             <tr class="item_table">
                                 <!--<td>{{ i }}</td>-->
                                 <td>{{ d.name }}</td>
