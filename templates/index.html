@@ -12,18 +12,21 @@
         <nav class="horizontal-menu">
             <ul>
                 <li>
-                    <a class="menu-item nav-item {% if active_page == 'table' %}active{% endif %}" href="{{ url_for('table') }}" id="option_table">
+                    <a class="nav-item {% if active_page == 'table' %}active{% endif %}" href="{{ url_for('table') }}" id="option_table">
                         <img src="{{ url_for('static', filename='images/icons8-cuadrícula-64.png') }}" width="32" height="32">
                         {{name_items_menu[0]}}
                     </a>
                 </li>
                 <li>
-                    <a class="menu-item nav-item {% if active_page == 'charts' %}active{% endif %}" href="{{ url_for('charts') }}" id="option_chart">
+                    <a class="nav-item {% if active_page == 'charts' %}active{% endif %}" href="{{ url_for('charts') }}" id="option_chart">
                         <img src="{{ url_for('static', filename='images/icons8-gráfico-94.png') }}" width="32" height="32">
                         {{name_items_menu[1]}}
                     </a>
                 </li>
             </ul>
+            <span class="text_info" style="float: right; text-align: left;">
+                Version: {{version}}
+            </span>
         </nav>
         
         <div class="content">

@@ -15,4 +15,5 @@ print("#############")
 
 #ENABLE APP
 SHOW_APP = bool(config['Page']['appState'])
+VERSION = config['Page']['version']
 print(SHOW_APP)

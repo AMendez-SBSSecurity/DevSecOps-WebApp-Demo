@@ -24,9 +24,9 @@ def index():
             reader = csv.DictReader(csvfile)
             for row in reader:
                 csv_data.append(row)
-        return render_template('table.html', active_page='table',title_table=title_table, csv_data=csv_data,show_app=show_app,message_empty_page=message_empty_page,name_items_menu=name_items_menu,success_message=('success_message', None))
+        return render_template('table.html', active_page='table',title_table=title_table, csv_data=csv_data,show_app=show_app,message_empty_page=message_empty_page,name_items_menu=name_items_menu,version = config.VERSION)
     else:
-        return render_template('index.html', show_app=show_app,message_empty_page=message_empty_page,name_items_menu=name_items_menu)
+        return render_template('index.html', show_app=show_app,message_empty_page=message_empty_page,name_items_menu=name_items_menu,version = config.VERSION)
 @app.route('/table')
 def table():
     csv_data = []
