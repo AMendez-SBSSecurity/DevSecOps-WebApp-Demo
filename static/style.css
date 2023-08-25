@@ -96,6 +96,12 @@ body {
     padding: 10px;
     text-align: center;
 }
+.vertical_grow{
+    white-space: normal;
+    overflow-y: auto;
+    max-width: 320px;
+
+}
 @media (max-width: 900px) {
     .container {
       display: inline;
