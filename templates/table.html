@@ -13,7 +13,7 @@
         <div class="card shadow">
             <div class="card-body">
                 <div class="table-responsive">
-                    <table class="table">
+                    <table class="table table-bordered">
                         <thead>
                             <tr class="text-center">
                                 <th scope="col">Name</th>
@@ -28,13 +28,13 @@
                                 <!--<td>{{ i }}</td>-->
                                 <td>{{ d.name }}</td>
                                 <td>{{ d.menu_item }}</td>
-                                <td>{{ d.notes }}</td>
+                                <td class="vertical_align">{{ d.notes }}</td>
                                 <td>{{ d.email }}</td>
                             </tr>
                             {% endfor %}
                         </tbody>
                     </table>
-                </div>
+
             </div>
         </div>
     </div>
